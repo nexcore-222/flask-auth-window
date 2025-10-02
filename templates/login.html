@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Login window</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Sign in</h2>
+        {% if error %}<p class="error">{{ error }}</p>{% endif %}
+        <form method="post">
+            <input type="text" name="username" placeholder="Login" required><br>
+            <input type="password" name="password" placeholder="Password" required><br>
+            <button type="submit">Enter</button>
+        </form>
+    </div>
+</body>
+</html>
