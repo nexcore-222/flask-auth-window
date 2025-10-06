@@ -51,6 +51,7 @@ def dashboard():
         return f"Welcome, {session['username']}!"
     return redirect(url_for('login'))
 
+#Logout
 @app.route('/logout')
 def logout():
     session.pop('username', None)
